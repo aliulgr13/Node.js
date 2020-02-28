@@ -1,0 +1,22 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "nodeweek2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliulgr13/Node.js.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "aliulgr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliulgr13/Node.js/issues"
+  },
+  "homepage": "https://github.com/aliulgr13/Node.js#readme"
+}
