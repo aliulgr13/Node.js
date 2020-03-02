@@ -40,5 +40,11 @@ app.delete('/blogs/:title', (req, res) => {
 app.get('/blogs/:title', (req, res) => {
   const title = req.params.title;
   // How to get the tilte from the url parameters?
-  res.sendfile(title);
+  res.sendFile(title, {
+    root: __dirname,
+    headers: {
+      'Content-Type': 'text/plain'
+    }
+  })
+  //res.send(title)
 })
