@@ -1,0 +1,44 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 1.6;
+  background: lightblue;
+  background-image: linear-gradient(to right, #76e8ec, #e26886);
+  color: rgb(240, 228, 228);
+}
+
+form {
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.inpt {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.button {
+  background: rgb(78, 148, 148);
+  color: rgb(240, 231, 231);
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.button:hover {
+  background: rgb(84, 209, 209);
+  color: #fff;
+}
