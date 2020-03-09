@@ -19,11 +19,15 @@ app.post('/weather', (req, res) => {
   const cityName = req.body.cityName;
   axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=${APIKEY}`)
     .then(cityInfos => {
-      const celcius = Math.round(cityInfos.data.main.temp - '273');
+      const celcius = Math.round(cityInfos.data.main.temp - 273);
       res.render('index', { weatherInfos: `Hello there, today the weather in ${cityInfos.data.name} is ${celcius} °C` })
     })
     .catch(err => {
-      res.render('index', { weatherText: `Opps,There is ${err.response.data.cod} error ${err.response.data.message}` })
+      if (err.response) {
+        res.render('index', { weatherText: `Opps,There is ${err.response.data.cod} error ${err.response.data.message}` })
+      } else if (error.request) {
+        res.render('index', { weatherText: `Opps,There is ${error.request}` })
+      }
     })
 });
 
